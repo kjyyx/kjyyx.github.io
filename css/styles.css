@@ -156,7 +156,7 @@ ul li:hover {
 }
 
 .info-container {
-    max-width: 80px;
+    max-width: 800px;
     margin-right: 20px;
     /* Adjust the margin as needed for spacing between containers */
 }
@@ -237,7 +237,6 @@ ul li:hover {
     padding: 100px;
     min-height: 50vh;
     /* background-color: #333; */
-    /* Added background color for better visibility */
 }
 
 .skills-container {
