@@ -14,3 +14,19 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll('.scroll-animation');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate');
+            }
+        });
+    });
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+});

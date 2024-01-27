@@ -167,8 +167,7 @@ ul li:hover {
 
 .main-heading {
     font-size: 59px;
-    font-family: 'Rugen', sans-serif;   
-    font-family: 'Rugen', sans-serif;                                              
+    font-family: 'Rugen', sans-serif;                                           
     color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
@@ -185,7 +184,7 @@ ul li:hover {
     height: 15px;
     background-color: #ff0000;
     position: relative;
-    top: -0.5rem;
+    top: -0.1rem;
     z-index: 4;
 }
 
@@ -207,12 +206,13 @@ ul li:hover {
     flex: 1;
     font-family: "Source Code Pro", monospace;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 500;
     font-style: normal;
     color: white;
     text-transform: uppercase;
     width: 80%;
     font-size: 1.2rem;
+    font-size: 20px;
 }
 
 .info-wrapper {
@@ -400,11 +400,11 @@ ul li:hover {
 }
 
 .project-title {
-    font-size: 24px;
+    font-size: 35px;
     color: #fff;
     font-family: 'Rugen', sans-serif;   
     font-optical-sizing: auto;
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
     padding: 10px 0;
     margin: 0; /* Remove default margin to align better */
@@ -413,6 +413,7 @@ ul li:hover {
 .project-description {
     color: #fff;
     font-family: "Source Code Pro", monospace;
+    font-size: 20px;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
@@ -525,6 +526,19 @@ a {
     text-decoration: none;
 }
 
+.copyright{
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+    font-weight: normal;
+    font-style: normal;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
 
 /* width */
 ::-webkit-scrollbar {
@@ -547,6 +561,19 @@ a {
 ::-webkit-scrollbar-thumb:hover {
     background: #6b6b6b;
 }
+
+/* styles.css */
+.scroll-animation {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.scroll-animation.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 @media only screen and (max-width: 768px) {
     .nav-menu {
