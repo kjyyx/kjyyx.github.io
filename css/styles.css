@@ -13,11 +13,6 @@
     src: url('fonts/horizon.otf');
 }
 
-/* html {
-    font-size: 62.5%;
-    font-family: 'Roboto', sans-serif;
-} */
-
 body {
     padding: 0;
     margin: 0;
@@ -61,6 +56,7 @@ body {
 
 .hamburger {
     display: none;
+    
 }
 
 .bar {
@@ -103,7 +99,7 @@ body {
 .nav-logo {
     text-transform: uppercase;
     cursor: pointer;
-    font-family: Horizon, sans-serif;
+    font-family: 'Rugen', sans-serif;   
     color: white;
 }
 
@@ -144,14 +140,10 @@ ul li:hover {
     left: 0;
     width: 100%;
     height: 300px;
-    /* Adjust the height as needed */
     background: linear-gradient(to bottom, rgba(65, 88, 208, 0), #1d1d1b);
     z-index: 3;
-    /* Place it above the background image */
     pointer-events: none;
-    /* Allows clicks to go through the pseudo-element */
     transition: opacity 0.5s ease;
-    /* Add transition for a smooth effect */
 }
 
 #info {
@@ -174,8 +166,9 @@ ul li:hover {
 }
 
 .main-heading {
-    font-size: 60px;
-    font-family: Horizon, sans-serif;
+    font-size: 59px;
+    font-family: 'Rugen', sans-serif;   
+    font-family: 'Rugen', sans-serif;                                              
     color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
@@ -258,7 +251,7 @@ ul li:hover {
 /* .smain-heading {
     text-align: center;
     font-size: 60px;
-    font-family: Horizon, sans-serif;
+    font-family: 'Rugen', sans-serif;   
     color: white;
     font-weight: normal;
     font-style: normal;
@@ -268,7 +261,7 @@ ul li:hover {
 .smain-heading {
     text-align: center;
     font-size: 60px;
-    font-family: Horizon, sans-serif;
+    font-family: 'Rugen', sans-serif;   
     color: transparent;
     /* Use a transparent color to hide the actual text color */
     -webkit-background-clip: text;
@@ -280,7 +273,6 @@ ul li:hover {
     padding: 50px;
     /* Adjust padding as needed */
 }
-
 
 .skills-text {
     display: flex;
@@ -303,11 +295,10 @@ ul li:hover {
     border-image-slice: 1;
 }
 
-
 .skill-box h2 {
     margin: 20px;
     font-size: 20px;
-    font-family: Horizon, sans-serif;
+    font-family: 'Rugen', sans-serif;   
     color: white;
 }
 
@@ -403,7 +394,7 @@ ul li:hover {
 .project-title {
     font-size: 24px;
     color: #fff;
-    font-family: Horizon, sans-serif;
+    font-family: 'Rugen', sans-serif;   
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
@@ -473,7 +464,7 @@ ul li:hover {
 
 .cmain-heading {
     font-size: 30px;
-    font-family: Horizon, sans-serif;
+    font-family: 'Rugen', sans-serif;   
     color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
