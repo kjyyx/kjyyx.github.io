@@ -30,3 +30,38 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.observe(section);
     });
 });
+
+// Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document with smooth animation
+function topFunction() {
+    // For modern browsers
+    if (document.documentElement.scrollTo) {
+        document.documentElement.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    } else {  // For Safari
+        document.body.scrollTop = 0;
+    }
+}
+
+// Optionally, you can use the "scroll-behavior: smooth;" CSS property to enable smooth scrolling for the entire document.
+// Add the following to your styles.css file or in the head of your HTML:
+// html {
+//     scroll-behavior: smooth;
+// }
