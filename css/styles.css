@@ -315,7 +315,7 @@ ul li:hover {
     background-color: #ffe700;
     position: absolute;
     /* Change to absolute */
-    top: 55px;
+    top: 53px;
     z-index: 4;
 }
 
@@ -326,7 +326,7 @@ ul li:hover {
     background-color: #f000ff;
     position: absolute;
     /* Change to absolute */
-    top: 55px;
+    top: 53px;
     z-index: 4;
 }
 
@@ -338,7 +338,7 @@ ul li:hover {
     background-color: #001eff;
     position: absolute;
     /* Change to absolute */
-    top: 82px;
+    top: 77px;
     z-index: 4;
 }
 
@@ -349,7 +349,7 @@ ul li:hover {
     background-color: #ff0080;
     position: absolute;
     /* Change to absolute */
-    top: 55px;
+    top: 53px;
     z-index: 4;
 }
 
@@ -361,6 +361,14 @@ ul li:hover {
 .skill-list{
     color: white;
     padding: 0 40px;
+}
+
+.skill-list li{
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
 }
 
 /* PROJECTS */
@@ -504,12 +512,12 @@ ul li:hover {
 }
 
 .socials:hover {
-    color: #c7ff2b;
+    color: #000000;
     /* Change color on hover */
 }
 
 .csecondary-heading:hover {
-    color: #c7ff2b;
+    color: #000000;
     /* Change color on hover */
 }
 
