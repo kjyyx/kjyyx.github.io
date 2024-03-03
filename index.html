@@ -2,37 +2,67 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/rugen" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Kyzen | Digital Portfolio</title>
-    <link rel="icon" href="/img/ICON.png" type="image/x-icon">
-
+    <link rel="icon" href="/img/KYZENLOGO2.png" type="image/x-icon" />
 </head>
 
 <body>
     <section class="showcase">
+        <div class="mainheadcontainer">
+            <div class="header-container visible-container">
+                <img src="img/KYZENLOGO2.png" alt="Logo2" class="nav-logo2" />
+                <h1 class="header-text">Kyzen</h1>
+                <h3 class="header-text2">Website Front & Backend Developer.</h3>
+            </div>
+            <div class="header-container invisible-container">
+                <!-- No content -->
+            </div>
+        </div>
 
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
     </section>
+
     <header class="header">
         <div class="toggle"></div>
         <nav class="navbar">
-            <h2 class="nav-logo">Kyzen</h2>
+            <div class="logo-container">
+                <img src="img/KYZENLOGO2.png" alt="Logo" class="nav-logo" />
+                <!-- <img src="img/KYZENLOGO5.png" alt="Logo" class="nav-logo3" /> -->
+                <h2 class="nav-text">Kyzen</h2>
+            </div>
             <ul class="nav-menu">
-                <li class="nav-item"><a href="#home" class="nav-link">// home</a><span class="badge">01</span></li>
-                <li class="nav-item"><a href="#info" class="nav-link">// info</a><span class="badge">02</span></li>
-                <li class="nav-item"><a href="#skills" class="nav-link">// skills</a><span class="badge">03</span></li>
-                <li class="nav-item"><a href="#projects" class="nav-link">// projects</a><span class="badge">04</span>
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">// home</a><span class="badge">01</span>
                 </li>
-                <li class="nav-item"><a href="#contact" class="nav-link">// contact</a><span class="badge">05</span>
+                <li class="nav-item">
+                    <a href="#info" class="nav-link">// info</a><span class="badge">02</span>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">// skills</a><span class="badge">03</span>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">// projects</a><span class="badge">04</span>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">// contact</a><span class="badge">05</span>
                 </li>
             </ul>
             <div class="hamburger">
@@ -43,9 +73,10 @@
         </nav>
     </header>
 
-    <!-- info section-->
+    <!-- INFO SECTION -->
     <section id="info" class="scroll-animation">
         <div class="info-container">
+            <h1 class="info-header">INFO.</h1>
             <div class="text-container">
                 <h1 class="main-heading">HELLO, I'M KYZEN.</h1>
                 <div class="line"></div>
@@ -60,153 +91,175 @@
                         challenge.
                     </p>
                 </div>
+                <div class="info-more">
+                    <a href="path/to/your/resume.pdf" class="resume-button" target="_blank"><span
+                            class="marquee-text">DOWNLOAD RESUME</span></a>
+                </div>
             </div>
         </div>
         <div class="info-wrapper">
             <div class="image-container">
                 <div class="image-overlay">
-                    <img src="img/PP RVLVR2.png" alt="Your Image Alt Text">
+                    <img src="img/PORTRAIT-1.png" alt="Your Image Alt Text">
                 </div>
             </div>
         </div>
     </section>
 
-
-    <!-- skills section-->
+    <!-- SKILLS SECTION -->
     <section id="skills" class="scroll-animation">
         <div class="skills-container">
-            <h1 class="smain-heading">Skills</h1>
-            <div class="skills-text">
-                <div class="skill-box">
-                    <h2 class="skill-title">Front-end</h2>
-                    <div class="sline1"></div>
-                    <ul class="skill-list">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                    </ul>
-                </div>
-                <div class="skill-box">
-                    <h2 class="skill-title">Back-end</h2>
-                    <div class="sline2"></div>
-                    <ul class="skill-list">
-                        <li>Node.js</li>
-                        <li>PHP</li>
-                        <li>Python</li>
-                        <li>Java</li>
-                        <li>C#</li>
-                    </ul>
-                </div>
-                <div class="skill-box">
-                    <h2 class="skill-title">Database Management</h2>
-                    <div class="sline3"></div>
-                    <ul class="skill-list">
-                        <li>SQL (MySQL)</li>
-                        <li>NoSQL (MongoDB)</li>
-                    </ul>
-                </div>
-                <div class="skill-box">
-                    <h2 class="skill-title">Frameworks</h2>
-                    <div class="sline4"></div>
-                    <ul class="skill-list">
-                        <li>React.js</li>
-                        <li>Angular</li>
-                        <li>Vue.js</li>
-                        <li>Express (Node.js)</li>
-                    </ul>
-                </div>
+            <h1 class="skills-header">Skills.</h1>
+            <div class="skill-box">
+                <ul class="skill-list">
+                    <li><i class="fas fa-code"></i><span class="skill-name">HTML</span>
+                        <div class="range" style="--p:80">
+                            <div class="range__label"></div>
+                        </div>
+                    </li>
+                    <li><i class="fab fa-css3-alt"></i><span class="skill-name">CSS</span>
+                        <div class="range" style="--p:80">
+                            <div class="range__label"></div>
+                        </div>
+                    </li>
+                    <li><i class="fab fa-js"></i><span class="skill-name">JavaScript</span>
+                        <div class="range" style="--p:50">
+                            <div class="range__label"></div>
+                        </div>
+                    </li>
+                    <li><i class="fab fa-python"></i><span class="skill-name">Python</span>
+                        <div class="range" style="--p:70">
+                            <div class="range__label"></div>
+                        </div>
+                    </li>
+                    <li><i class="fas fa-database"></i><span class="skill-name">SQL</span>
+                        <div class="range" style="--p:40">
+                            <div class="range__label"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="marquee">
+            <div class="section-heading">
+                <h3>Other Skills</h3>
+            </div>
+            <div class="marquee--inner">
+                <span><i class="fab fa-php"></i> PHP</span>
+                <span><i class="fab fa-java"></i> Java</span>
+                <span><i class="fas fa-hashtag"></i> C#</span>
+                <span><i class="fas fa-database"></i> NoSQL</span>
+                <span><i class="fab fa-react"></i> React.js</span>
+                <span><i class="fab fa-angular"></i> Angular</span>
+                <span><i class="fab fa-vuejs"></i> Vue.js</span>
+                <span><i class="fab fa-node-js"></i> Express (Node.js)</span>
+                <span><i class="fab fa-dart"></i> Dart</span>
+                <span><i class="fab fa-flutter"></i> Flutter</span>
             </div>
         </div>
     </section>
 
-
-    <!-- projects section -->
+    <!-- PROJECTS SECTION -->
     <section id="projects" class="scroll-animation">
         <div class="projects-container">
-            <h1 class="smain-heading">Projects</h1>
-            <div class="project scroll-animation">
-                <div class="project-info">
-                    <h2 class="project-title">Lava Craze</h2>
-                    <p class="project-description">
-                        Lava Craze is our first client's website, built using WordPress and hosted on Hostinger. With
-                        plugins like Site Kit, All-in-one SEO, Elementor, Google Analytics, and Autoptimize, the site
-                        seamlessly combines technology and design for a user-friendly experience.</p>
+            <h1 class="projects-header">PROJECTS.</h1>
+            <div class="projects-row">
+                <div class="projects-item">
+                    <img src="img/lavacraze.png" alt="Project Item 1">
+                    <div class="overlay">
+                        <h2>Lava Craze</h2>
+                        <p>WORDPRESS | Front End Developer</p>
+                    </div>
                 </div>
-                <div class="project-image">
-                    <img src="img/lavacraze.png" alt="Project Image">
-                    <div class="overlay"></div>
-                </div>
-            </div>
-            <div class="project scroll-animation">
-                <div class="project-info">
-                    <h2 class="project-title">Brisk</h2>
-                    <p class="project-description">
-                        Brisk is an advanced vehicle rental service. It uses mySQL for a strong database and PHP, CSS,
-                        and JavaScript for a smooth and enjoyable user experience. Brisk incorporates CRUD operations
-                        (CREATE, READ, UPDATE, DELETE) to efficiently manage data. It redefines vehicle rental with a
-                        dynamic and user-friendly approach, blending cutting-edge technologies seamlessly.</p>
-                </div>
-                <div class="project-image">
-                    <img src="img/brisk.png" alt="Project Image">
-                    <div class="overlay"></div>
+                <div class="projects-item">
+                    <img src="img/brisk.png" alt="Project Item 2">
+                    <div class="overlay">
+                        <h2>Brisk Car Rental Serive</h2>
+                        <p>MariaDB | Full Stack Developer</p>
+                    </div>
                 </div>
             </div>
-            <div class="project scroll-animation">
-                <div class="project-info">
-                    <h2 class="project-title">Sprint Autocare</h2>
-                    <p class="project-description">Sprint Auto Care is a modern vehicle rental service, designed with a
-                        blend of Bootstrap, HTML, CSS, and JS, enriched with the power of APIs (Application Programming
-                        Interfaces). Utilizing Atlassian's Jira Software and Bitbucket, along with Google's App Script,
-                        Form, Gmail, and Spreadsheet, the website becomes a dynamic and functional platform.</p>
+            <div class="projects-row">
+                <div class="projects-item">
+                    <img src="img/sprint.png" alt="Project Item 1">
+                    <div class="overlay">
+                        <h2>Sprint Autocare Service</h2>
+                        <p>API Integration | Full Stack Developer</p>
+                    </div>
                 </div>
-                <div class="project-image">
-                    <img src="img/sprint.png" alt="Project Image">
-                    <div class="overlay"></div>
-                </div>
-            </div>
-            <div class="project scroll-animation">
-                <div class="project-info">
-                    <h2 class="project-title">Galactic Pressed Tasting</h2>
-                    <p class="project-description">Galactic Pressed Tasting brings you a delightful coffee shop website,
-                        made with HTML, CSS, and JS for an enjoyable online experience. We've added MongoDB, a fancy
-                        database system, and integrated CRUD operations to make sure everything runs smoothly. This
-                        creates a strong and reliable platform for all coffee lovers out there.</p>
-                </div>
-                <div class="project-image">
-                    <img src="img/GPT.png" alt="Project Image">
-                    <div class="overlay"></div>
+                <div class="projects-item">
+                    <img src="img/GPT.png" alt="Project Item 2">
+                    <div class="overlay">
+                        <h2>Galactic Pressed Tasting Coffeeshop</h2>
+                        <p>MongDB | Full Stack Developer</p>
+                    </div>
                 </div>
             </div>
-            <div class="project scroll-animation">
-                <div class="project-info">
-                    <h2 class="project-title">Railroad-Ed</h2>
-                    <p class="project-description">
-                        Railroad-ED is an interesting website all about the history of the Philippine Railroad. It has
-                        blogs about its past, present, and future. The site is made with WordPress, making it easy for
-                        you to dive into the exciting story of the Philippine Railroad.</p>
+            <div class="projects-row">
+                <div class="projects-item">
+                    <img src="img/railroad-ed.png" alt="Project Item 1">
+                    <div class="overlay">
+                        <h2>Railroad-ed Blog</h2>
+                        <p>WORDPRESS | Front-end Developer</p>
+                    </div>
                 </div>
-                <div class="project-image">
-                    <img src="img/railroad-ed.png" alt="Project Image">
-                    <div class="overlay"></div>
+                <div class="projects-item">
                 </div>
             </div>
         </div>
     </section>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-    
+
+    <!-- <section class="universal-section">
+        <div class="content">
+        </div>
+    </section> -->
+
+    <!-- <section class="universal-section">
+        <div class="content">
+            <h2>Title</h2>
+            <p>Description goes here</p>
+            <button>Call to Action</button>
+        </div>
+        <img src="img/PP RVLVR2.png" alt="Image">
+    </section> -->
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <img src="/img/rocket.png" alt="Rocket"> <!-- Add your rocket PNG image -->
+    </button>
+
     <!-- contact section -->
     <section id="contact">
-        <h1 class="cmain-heading">Contact Me</h1>
-        <div class="contact-container">
-            <a href="mailto:kpjaculbia@gmail.com" class="csecondary-heading">kpjaculbia@gmail.com</a>
-            <div class="cline1"></div>
-            <a href="https://m.me/jikennn" class="socials" target="_blank">// Messenger</a>
-            <a href="https://www.facebook.com/jikennn/" class="socials" target="_blank">// Facebook</a>
-            <a href="https://github.com/kjyyx" class="socials" target="_blank">// Github</a>
+        <!-- <h1 class="cmain-heading">Contact Me.</h1> -->
+        <div class="contact-row">
+            <div class="contact-left">
+                <h2 class="csub-heading">
+                    Do you have a thrilling project that needs a creative touch? </h2>
+                <p class="cparagraph">Let's bring it to life together!
+                    Reach out to me via email or shoot me a message for a quick chat!</p>
+            </div>
+            <div class="contact-center">
+                <div class="contact-container">
+                    <a href="mailto:kpjaculbia@gmail.com" class="socials"><i class="fa fa-envelope"></i> //
+                        kpjaculbia@gmail.com</a>
+                    <div class="cline1"></div>
+                    <a href="https://m.me/jikennn" class="socials" target="_blank"><i
+                            class="fab fa-facebook-messenger"></i> // Messenger</a>
+                    <a href="https://www.facebook.com/jikennn/" class="socials" target="_blank"><i
+                            class="fab fa-facebook"></i> // Facebook</a>
+                    <a href="https://github.com/kjyyx" class="socials" target="_blank"><i class="fab fa-github"></i> //
+                        Github</a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <img src="img/KYZENLOGO4.png" alt="Logo2" class="contact-logo" />
+            </div>
         </div>
         <div class="copyright">Designed by: KYZEN © 2024</div>
     </section>
+
+
 </body>
 <script src="js/script.js"></script>
 

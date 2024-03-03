@@ -59,9 +59,3 @@ function topFunction() {
         document.body.scrollTop = 0;
     }
 }
-
-// Optionally, you can use the "scroll-behavior: smooth;" CSS property to enable smooth scrolling for the entire document.
-// Add the following to your styles.css file or in the head of your HTML:
-// html {
-//     scroll-behavior: smooth;
-// }
