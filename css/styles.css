@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+@import url('https://fonts.cdnfonts.com/css/fast-hand');
 
 * {
     box-sizing: border-box;
@@ -13,10 +14,10 @@
     src: url("fonts/horizon.otf");
 }
 
-@font-face {
+/* @font-face {
     font-family: Fast Hand;
     src: url("fonts/Fast Hand.otf");
-}
+} */
 
 body {
     padding: 0;
@@ -147,7 +148,7 @@ body::after {
 .nav-text {
     margin: 0;
     /* Reset margin for H2 */
-    font-family: "Fast Hand", sans-serif;
+    font-family: 'Fast Hand', sans-serif;
     color: white;
     font-optical-sizing: auto;
     font-style: normal;
