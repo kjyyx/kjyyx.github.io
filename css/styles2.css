@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    width: 100%;
+    background-image: linear-gradient(45deg, #ff4500, #ffff00);
+    padding: 10px;
+    color: #000000;
+    text-align: center;
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+.copyright2,
+.rights-reserved {
+    font-family: "Source Code Pro", monospace;
+    color: #000000;
+    font-size: 0.8rem;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.content-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    min-height: calc(100vh - 5vh - 20px); /* Adjust for footer height and padding */
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+
+.content1 {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.title {
+/*Typography stuff*/
+    font-size: 2rem;
+}
+
+.description {
+    font-size: 1.2rem;
+}
+
+.call-to-action {
+    /*Box model stuff*/
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff4500;
+    /*Typography stuff*/
+    font-size: 1.2rem;
+    color: white;
+    /*Miscellaneous*/
+    cursor: pointer;
+}
+
+.image {
+    max-width: 50%;
+    height: auto;
+}
+
+.workinprogress {
+    max-width: 90%; /* Ensure the image doesn't exceed its container */
+    max-height: 100%; /* Ensure the image doesn't exceed its container */
+    height: auto;
+    background-position: center;
+
+}

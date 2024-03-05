@@ -59,3 +59,9 @@ function topFunction() {
         document.body.scrollTop = 0;
     }
 }
+
+function redirectToPage(pageUrl) {
+    // Perform the redirection with an animation
+    // For demonstration purposes, let's use a simple redirection without animation
+    window.location.href = pageUrl;
+}
