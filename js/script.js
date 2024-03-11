@@ -65,4 +65,3 @@ function redirectToPage(pageUrl) {
     // For demonstration purposes, let's use a simple redirection without animation
     window.location.href = pageUrl;
 }
-

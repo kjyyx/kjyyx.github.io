@@ -757,6 +757,7 @@ ul li:hover {
     text-align: center;
     transition: opacity 0.3s ease;
     opacity: 0;
+    cursor: pointer;
 }
 
 .projects-item:hover .overlay {
