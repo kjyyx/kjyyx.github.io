@@ -13,9 +13,52 @@
     <link href="https://fonts.cdnfonts.com/css/fast-hand" rel="stylesheet">
     <title>GPT | Kyzen</title>
     <link rel="icon" href="/img/KYZENLOGO2.png" type="image/x-icon" />
+    <style>
+        .showcase2 {
+            position: relative;
+            right: 0;
+            width: 100%;
+            min-height: 40vh;
+            padding: 0 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1d1d1b;
+            background-image: url(../img/GPT-1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center calc(50% + -30vh); 
+            background-attachment: fixed;
+            color: #fff;
+            z-index: 2;
+            transition: 0.5s;
+        }
+
+        .showcase2::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(to bottom, rgba(65, 88, 208, 0), #1d1d1b);
+            z-index: 3;
+            pointer-events: none;
+            transition: opacity 0.5s ease;
+        }
+
+        @media only screen and (max-width: 768px) {
+
+            .showcase2 {
+                background-attachment: scroll;
+                background-position: center calc(50% + 10px); 
+            }
+        }
+    </style>
 </head>
 
 <body>
+    <section class="showcase2"></section>
     <header class="header">
         <div class="toggle"></div>
         <nav class="navbar">
@@ -50,17 +93,118 @@
     </header>
 
     <section class="content-section">
-        <!-- <div class="content1">
-            <h2 class="title">Lava Craze</h2>
-            <p class="description">Description goes here</p>
-            <button class="call-to-action">Call to Action</button>
-        </div> -->
-        <!-- <img class="image lavacraze-image" src="../img/lavacraze.png" alt="Image"> -->
-        <div class="content2">
-            <img class="workinprogress" src="../img/Handjet.png" alt="Image">
+        <div class="breadcrumb">
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="../#projects" class="nav-link">Projects</a>
+            <a href="../projects/GPT.html" class="nav-link"><span>Galactic Pressed Tasting</span></a>
         </div>
+        <div class="content1">
+            <!-- <h2 class="title">Lava Craze</h2> -->
+            <img class="image lavacraze-image" src="../img/GPT.png" alt="Image">
+            <p class="description">Galactic Pressed Tasting brings you a delightful coffee shop website,
+                made with HTML, CSS, and JS for an enjoyable online experience. We've added MongoDB, a fancy
+                database system, and integrated CRUD operations to make sure everything runs smoothly. This
+                creates a strong and reliable platform for all coffee lovers out there.
+            </p>
+        </div>
+        <hr class="divider">
+        <div class="content4">
+            <!-- <div class="main-description">
+                <p class="description">Lava Craze is our first client's website, built using WordPress and hosted on
+                    Hostinger.
+                    With
+                    plugins like Site Kit, All-in-one SEO, Elementor, Google Analytics, and Autoptimize, the site
+                    seamlessly combines technology and design for a user-friendly experience.</p>
+            </div> -->
+            <div class="contributors">
+                <div class="contributor">
+                    <h4>Kenji Jaculbia</h4>
+                    <h5>Developer</h5>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa fa-envelope"></i></a>
+                        <a href="#"><i class="fa fa-globe"></i></a>
+                    </div>
+                </div>
+                <div class="contributor">
+                    <h4>Dennis Dela Rosa</h4>
+                    <h5>Developer</h5>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa fa-envelope"></i></a>
+                        <a href="#"><i class="fa fa-globe"></i></a>
+                    </div>
+                </div>
+                <div class="contributor">
+                    <h4>Dayson Delfin</h4>
+                    <h5>Developer</h5>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa fa-envelope"></i></a>
+                        <a href="#"><i class="fa fa-globe"></i></a>
+                    </div>
+                </div>
+                <div class="contributor">
+                    <h4>Reuben Rob Sibal</h4>
+                    <h5>Developer</h5>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa fa-envelope"></i></a>
+                        <a href="#"><i class="fa fa-globe"></i></a>
+                    </div>
+                </div>
+                <div class="contributor">
+                    <h4>Jose Raphael Quiambao</h4>
+                    <h5>Developer</h5>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa fa-envelope"></i></a>
+                        <a href="#"><i class="fa fa-globe"></i></a>
+                    </div>
+                </div>
+            </div>
     </section>
 
+
+    <section class="img-content-section">
+        <div class="content2">
+            <!-- <h1 class="content-header">SCREENSHOTS</h1> -->
+            <img class="img-content"
+                src="../img/SS PORTFOLIO/screencapture-file-C-Users-kenji-OneDrive-Documents-GPT-ADVDBASE-GPT-ADVDBASE-HOME-html-2024-03-09-18_20_44.png"
+                alt="Screenshot 1">
+            <img class="img-content"
+                src="../img/SS PORTFOLIO/screencapture-file-C-Users-kenji-OneDrive-Documents-GPT-ADVDBASE-GPT-ADVDBASE-LOGIN-html-2024-03-09-18_20_10.png"
+                alt="Screenshot 2">
+            <img class="img-content"
+                src="../img/SS PORTFOLIO/screencapture-file-C-Users-kenji-OneDrive-Documents-GPT-ADVDBASE-GPT-ADVDBASE-SIGNUP-html-2024-03-09-18_20_32.png"
+                alt="Screenshot 3">
+            <img class="img-content"
+                src="../img/SS PORTFOLIO/screencapture-file-C-Users-kenji-OneDrive-Documents-GPT-ADVDBASE-GPT-ADVDBASE-SIGNUP2-html-2024-03-09-18_21_26.png"
+                alt="Screenshot 4">
+            <img class="img-content"
+                src="../img/SS PORTFOLIO/screencapture-file-C-Users-kenji-OneDrive-Documents-GPT-ADVDBASE-GPT-ADVDBASE-ORDER-html-2024-03-09-18_21_52.png"
+                alt="Screenshot 5">
+        </div>
+        <!-- <div class="content3">
+            <iframe class="youtube-video" src="https://www.youtube.com/embed/OeOVT904p4s" frameborder="0"
+                allowfullscreen></iframe>
+            <iframe class="youtube-video" src="https://www.youtube.com/embed/Td_RxR9-mw4" frameborder="0"
+                allowfullscreen></iframe>
+        </div> -->
+    </section>
+
+    <div class="project-navigation">
+        <div class="prev-project">
+            <a href="#" id="prevProjectLink">&lt;</a>
+        </div>
+        <div class="next-project">
+            <a href="#" id="nextProjectLink">&gt;</a>
+        </div>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <img src="../img/rocket.png" alt="Rocket"> <!-- Add your rocket PNG image -->
+    </button>
 
     <footer>
         <div class="copyright2">© 2024. Designed by Kyzen.</div>

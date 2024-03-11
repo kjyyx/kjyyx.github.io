@@ -47,6 +47,12 @@ body::after {
     z-index: -1;
 }
 
+::selection {
+    background-color: #FD7C18; /* Change the highlight color to yellow */
+    color: white; /* Change the text color when highlighted */
+}
+
+
 .badge {
     position: relative;
     top: -1rem;
@@ -118,7 +124,7 @@ body::after {
 }
 
 .nav-link:hover {
-    background: linear-gradient(45deg, #ff4500, #ffff00);
+    background: linear-gradient(45deg, #FD7C18, #FFDE59);
     /* Red-orange to yellow gradient */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1394,7 +1400,7 @@ img {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: rgb(255, 0, 0);
+    background: #ff7300;
     border-radius: 5px;
 }
 

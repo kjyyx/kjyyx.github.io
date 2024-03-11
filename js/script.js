@@ -65,3 +65,37 @@ function redirectToPage(pageUrl) {
     // For demonstration purposes, let's use a simple redirection without animation
     window.location.href = pageUrl;
 }
+
+// Array of project URLs
+var projects = ["lavacraze.html", "brisk.html", "sprint.html", "GPT.html", "railroaded.html"];
+
+// Get current project index
+var currentProjectIndex = projects.indexOf(window.location.pathname);
+console.log("Current URL: " + window.location.pathname);
+console.log("Current index: " + currentProjectIndex);
+
+// Update previous project link
+var prevProjectLink = document.getElementById("prevProjectLink");
+prevProjectLink.addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent default link behavior
+    if (currentProjectIndex === -1 || currentProjectIndex === 0) {
+        // If current project is the first one or not found, set link to the last project
+        window.location.href = projects[projects.length - 1];
+    } else {
+        // Otherwise, set link to the previous project
+        window.location.href = projects[currentProjectIndex - 1];
+    }
+});
+
+// Update next project link
+var nextProjectLink = document.getElementById("nextProjectLink");
+nextProjectLink.addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent default link behavior
+    if (currentProjectIndex === -1 || currentProjectIndex === projects.length - 1) {
+        // If current project is the last one or not found, set link to the first project
+        window.location.href = projects[0];
+    } else {
+        // Otherwise, set link to the next project
+        window.location.href = projects[currentProjectIndex + 1];
+    }
+});

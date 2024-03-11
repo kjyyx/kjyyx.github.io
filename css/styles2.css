@@ -5,13 +5,38 @@ body {
     min-height: 100vh;
 }
 
+body::after {
+    /*Display stuff*/
+    content: "";
+    /*Positioning stuff*/
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    /*Box model stuff*/
+    width: 100%;
+    height: 100%;
+    /* background-image: url('/img/BG2.png'); */
+    background-position: center;
+    background-size: contain;
+    /*Manipulations stuff*/
+    opacity: 0.05;
+    /*Miscellaneous*/
+    /* Adjust the opacity of the overlay */
+    /* Center the image */
+    /* Cover the entire body */
+    /* Create a pseudo-element */
+    /* background-size: cover; */
+}
+
 footer {
     width: 100%;
     background-image: linear-gradient(45deg, #ff4500, #ffff00);
     padding: 10px;
     color: #000000;
     text-align: center;
-    margin-top: auto; /* Push footer to the bottom */
+    margin-top: auto;
+    /* Push footer to the bottom */
 }
 
 .copyright2,
@@ -19,56 +44,333 @@ footer {
     font-family: "Source Code Pro", monospace;
     color: #000000;
     font-size: 0.8rem;
-    max-width: 1500px;
-    margin: 0 auto;
+}
+
+.copyright2 {
+    float: left;
+    /* Align the first div to the left */
+    margin-left: 15vw;
+    /* Add some margin for spacing */
+}
+
+.rights-reserved {
+/*Box model stuff*/
+    margin-right: 15vw;
+/*Miscellaneous*/
+    float: right;
+    /* Align the second div to the right */
+    /* Add some margin for spacing */
 }
 
 .content-section {
     display: flex;
+    position: relative;
+    min-height: 50vh;
     justify-content: space-between;
+    margin: 0 auto;
+    width: 70vw;
+    flex-direction: column;
+    padding: 50px 0 0 20px;
+}
+
+.content1 {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.content4 {
+    display: flex;
+    flex-direction: column; /* Arrange content vertically */
+    justify-content: center; /* Center the content vertically */
+    align-items: center; /* Center the content horizontally */
+}
+
+.title {
+    /*Typography stuff*/
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.description {
+/*Display stuff*/
+    flex: 1;
+/*Box model stuff*/
+    width: 90%;
+/*Typography stuff*/
+    font-family: "Source Code Pro", monospace;
+    font-size: 2.4vh;
+    font-style: normal;
+    text-transform: uppercase;
+    color: white;
+/*Miscellaneous*/
+    font-optical-sizing: auto;
+    flex-grow: 1; /* Allow the paragraph to grow to fill remaining space */
+}
+
+.image {
+    max-width: 30%;
+    height: auto;
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    margin-right: 30px; /* Add margin between the image and text */
+}
+
+.divider {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.contributors {
+    display: flex;
+    flex-wrap: wrap; /* Allow contributors to wrap */
+    max-width: 800px; /* Limit the width of the contributors section */
+    margin-top: 20px; /* Add top margin */
+}
+
+.contributor {
+    flex: 1; /* Make contributors occupy equal width */
+    text-align: center; /* Center align contributor content */
+    margin-bottom: 20px; /* Add bottom margin */
+    padding: 0 50px; /* Add padding */
+}
+
+.contributor h4, .contributor h5 {
+    font-family: "Source Code Pro", monospace;
+    color: white; /* Set text color */
+}
+
+.contributor h4 {
+    margin-bottom: 5px;
+}
+
+.contributor h5 {
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Add top margin */
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 20px;
+    color: #ffffff; /* Adjust icon color */
+}
+
+.social-icons a:hover {
+    background: linear-gradient(45deg, #FD7C18, #FFDE59);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.breadcrumb {
+    margin-bottom: 20px;
+    text-align: left; /* Align the breadcrumb to the left */
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #c0c0c0;
+    transition: color 0.3s;
+}
+
+.breadcrumb span {
+    color: #ffffff;
+    font-family: Orbitron;
+    font-weight: bold;
+}
+
+.breadcrumb a:not(:last-child)::after {
+    content: " > ";
+    margin: 0 5px;
+    color: #ffffff; /* Default color */
+}
+
+.breadcrumb a:not(:last-child):hover::after {
+    background: linear-gradient(45deg, #FD7C18, #FFDE59);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.workinprogress {
+    max-width: 90%;
+    max-height: 100%;
+    height: auto;
+    background-position: center;
+}
+
+/* iframe {
+    width: 100%; 
+    height: 315px; 
+    margin-bottom: 20px; 
+    border: 2px solid #ccc; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+iframe:hover {
+    border-color: #ff4500; 
+}
+
+
+.img-content-section {
+    display: flex;
+    justify-content: space-around;
     align-items: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
     padding: 100px;
-    min-height: calc(100vh - 5vh - 20px); /* Adjust for footer height and padding */
     max-width: 1500px;
     margin: 0 auto;
 }
 
-
-.content1 {
-    flex: 1;
-    margin-right: 20px;
+.content2 {
+    display: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
 
-.title {
-/*Typography stuff*/
-    font-size: 2rem;
-}
-
-.description {
-    font-size: 1.2rem;
-}
-
-.call-to-action {
-    /*Box model stuff*/
-    padding: 10px 20px;
-    border: none;
-    background-color: #ff4500;
-    /*Typography stuff*/
-    font-size: 1.2rem;
-    color: white;
-    /*Miscellaneous*/
-    cursor: pointer;
-}
-
-.image {
-    max-width: 50%;
+.img-content {
     height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.workinprogress {
-    max-width: 90%; /* Ensure the image doesn't exceed its container */
-    max-height: 100%; /* Ensure the image doesn't exceed its container */
-    height: auto;
-    background-position: center;
+@media only screen and (max-width: 768px) {
+    .img-content, .youtube-video {
+        max-width: 100%;
+    }
+} */
 
+.img-content-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 70vw;
+    margin: 0 auto;
+}
+
+.content2,
+.content3 {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.content3{
+    padding-bottom: 100px;
+}
+
+.content-header {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.img-content,
+.youtube-video,
+iframe {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    /* Maximize width based on container */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.youtube-video,
+iframe {
+    height: 735px;
+    /* Set fixed height for both YouTube videos and iframes */
+}
+
+iframe:hover {
+    border-color: #ff4500;
+}
+
+.project-navigation {
+    position: fixed;
+    top: 50%; /* Position at the middle of the screen vertically */
+    right: calc(0px + 0px + 25px); /* Adjust to avoid overlapping with existing button */
+    z-index: 99;
+    transform: translateY(-50%); /* Move the element up by 50% of its own height to center it */
+}
+
+
+.prev-project,
+.next-project {
+    background-color: #ff7300;
+    color: #ffffff;
+    padding: 10px 15px; /* Smaller padding */
+    border-radius: 5px;
+    font-size: 14px; /* Smaller font size */
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin: 10px 0;
+}
+
+.prev-project a,
+.next-project a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.prev-project:hover,
+.next-project:hover {
+    background-color: #cc3700;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .youtube-video,
+    iframe {
+        max-width: 100%;
+        height: 210px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .breadcrumb{
+        padding-top: 2vh;
+        margin: 0 auto;
+    }
+    .content1 {
+        display: flex;
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center align content horizontally */
+        text-align: center; /* Center align text */
+    }
+
+    .content1 .image {
+        margin-bottom: 20px; /* Add space below the image */
+    }
+
+    .image{
+        max-width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .content1 .description {
+        max-width: 100%; /* Limit width of the description */
+        font-size: 2.1vh;
+    }
+
+    .content-section{
+        padding: 0;
+    }
 }
