@@ -767,11 +767,34 @@ ul li:hover {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
+    font-family: "Orbitron", sans-serif;
 }
 
 .overlay p {
     font-size: 16px;
     margin: 0;
+    font-family: "Source Code Pro", monospace;
+}
+
+.view-project {
+    display: none;
+    font-size: 14px;
+    color: #fff;
+    background-color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.overlay:hover .view-project {
+    display: inline-block;
+}
+
+.prompt{
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.5;
+    font-family: "Source Code Pro", monospace;
 }
 
 /* CONTACT SECTION */
