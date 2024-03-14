@@ -65,3 +65,31 @@ function redirectToPage(pageUrl) {
     // For demonstration purposes, let's use a simple redirection without animation
     window.location.href = pageUrl;
 }
+
+
+function updateNavigation() {
+    const files = ['lavacraze.html', 'brisk.html', 'sprint.html', 'gpt.html', 'railroaded.html'];
+    const currentFile = location.pathname.split('/').pop(); // Get the current HTML file
+
+    // Find the index of the current HTML file in the list
+    const currentIndex = files.indexOf(currentFile);
+
+    // Update previous link
+    if (currentIndex > 0) {
+        document.getElementById('prevProjectLink').href = files[currentIndex - 1];
+    } else {
+        // Set previous link to the last file if it's the first file
+        document.getElementById('prevProjectLink').href = files[files.length - 1];
+    }
+
+    // Update next link
+    if (currentIndex < files.length - 1) {
+        document.getElementById('nextProjectLink').href = files[currentIndex + 1];
+    } else {
+        // Set next link to the first file if it's the last file
+        document.getElementById('nextProjectLink').href = files[0];
+    }
+}
+
+// Call the function initially
+updateNavigation();

@@ -333,6 +333,12 @@ iframe:hover {
     background-color: #cc3700;
 }
 
+.nav-link2 {
+    text-decoration: none;
+    position: relative;
+    color: white;
+    font-size: 1rem;
+}
 
 @media only screen and (max-width: 768px) {
 

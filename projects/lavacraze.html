@@ -28,7 +28,7 @@
             background-image: url(../img/LC-1.png);
             background-repeat: no-repeat;
             background-size: cover;
-            background-position: center calc(50% + -20vh); 
+            background-position: center calc(50% + -20vh);
             background-attachment: fixed;
             color: #fff;
             z-index: 2;
@@ -52,7 +52,7 @@
 
             .showcase2 {
                 background-attachment: scroll;
-                background-position: center calc(50% + 10px); 
+                background-position: center calc(50% + 10px);
             }
         }
     </style>
@@ -66,7 +66,9 @@
             <div class="logo-container">
                 <img src="../img/KYZENLOGO2.png" alt="Logo" class="nav-logo" />
                 <!-- <img src="img/KYZENLOGO5.png" alt="Logo" class="nav-logo3" /> -->
-                <a href="../index.html#home" class="nav-link"><h2 class="nav-text">Kyzen</h2></a>
+                <a href="../index.html#home" class="nav-link">
+                    <h2 class="nav-text">Kyzen</h2>
+                </a>
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
@@ -181,14 +183,14 @@
     </section>
 
     <div class="project-navigation">
-        <div class="prev-project">
-            <a href="#" id="prevProjectLink">&lt;</a>
-        </div>
-        <div class="next-project">
-            <a href="#" id="nextProjectLink">&gt;</a>
-        </div>
+        <a href="#" id="prevProjectLink" class="nav-link2">
+            <div class="prev-project">&lt;</div>
+        </a>
+        <a href="#" id="nextProjectLink" class="nav-link2">
+            <div class="next-project">&gt;</div>
+        </a>
     </div>
-    
+
     <button onclick="topFunction()" id="myBtn" title="Go to top">
         <img src="../img/rocket.png" alt="Rocket"> <!-- Add your rocket PNG image -->
     </button>
