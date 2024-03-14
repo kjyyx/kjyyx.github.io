@@ -312,14 +312,20 @@ iframe:hover {
 
 .prev-project,
 .next-project {
-    background-color: #ff7300;
-    color: #ffffff;
+/*Box model stuff*/
+    margin: 10px 0;
     padding: 10px 15px; /* Smaller padding */
     border-radius: 5px;
+    background-color: #ff7300;
+/*Typography stuff*/
     font-size: 14px; /* Smaller font size */
     text-decoration: none;
+    color: #ffffff;
+/*Manipulations stuff*/
     transition: background-color 0.3s;
-    margin: 10px 0;
+/*Miscellaneous*/
+    padding: 10px 15px; /* Smaller padding */
+    font-size: 14px; /* Smaller font size */
 }
 
 .prev-project a,
