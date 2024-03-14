@@ -35,8 +35,7 @@ footer {
     padding: 10px;
     color: #000000;
     text-align: center;
-    margin-top: auto;
-    /* Push footer to the bottom */
+    margin-top: auto; /* Push footer to the bottom */
 }
 
 .copyright2,
@@ -44,6 +43,7 @@ footer {
     font-family: "Source Code Pro", monospace;
     color: #000000;
     font-size: 0.8rem;
+    margin: 5px; /* Add some margin for spacing */
 }
 
 .copyright2 {
@@ -372,5 +372,19 @@ iframe:hover {
 
     .content-section{
         padding: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .copyright2, .rights-reserved {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
     }
 }

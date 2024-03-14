@@ -221,7 +221,6 @@ ul li:hover {
     flex-direction: column;
     align-items: center;
     margin: auto;
-    top: -10vh;
     padding: 100px;
 }
 
@@ -1275,11 +1274,14 @@ img {
 @media only screen and (max-width: 768px) {
     .mainheadcontainer {
         padding: 10px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center
     }
 
     .header-container {
         padding: 10px;
-        margin-bottom: 50px;
+        top: 10vh;
     }
 
     .nav-logo2,
@@ -1289,8 +1291,9 @@ img {
     }
 
     .visible-container {
-        margin-left: 10px;
+        margin-left: 20px;
     }
+
 
     .header-text {
         font-size: 5rem;
@@ -1320,6 +1323,7 @@ img {
 
 @media only screen and (max-width: 768px) {
     .showcase {
+        max-height: 100vh;
         padding: 50px;
         /* Reduce padding for smaller screens */
         background-position: calc(50% + -30vh) center;
@@ -1352,7 +1356,7 @@ img {
         left: -150%;
         top: 5rem;
         flex-direction: column;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.8);
         width: 100%;
         border-radius: 10px;
         text-align: center;
