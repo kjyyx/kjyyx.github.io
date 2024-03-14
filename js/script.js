@@ -68,7 +68,7 @@ function redirectToPage(pageUrl) {
 
 
 function updateNavigation() {
-    const files = ['lavacraze.html', 'brisk.html', 'sprint.html', 'gpt.html', 'railroaded.html'];
+    const files = ['lavacraze.html', 'brisk.html', 'sprint.html', 'GPT.html', 'railroaded.html'];
     const currentFile = location.pathname.split('/').pop(); // Get the current HTML file
 
     // Find the index of the current HTML file in the list
