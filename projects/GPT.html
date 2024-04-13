@@ -58,6 +58,14 @@
 </head>
 
 <body>
+    <div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+
     <section class="showcase2"></section>
     <header class="header">
         <div class="toggle"></div>
@@ -213,5 +221,19 @@
 
 </body>
 <script src="../js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    /* Preloader */
+    $(window).on("load", function () {
+        var preloaderFadeOutTime = 500;
+        function hidePreloader() {
+            var preloader = $(".spinner-wrapper");
+            setTimeout(function () {
+                preloader.fadeOut(preloaderFadeOutTime);
+            }, 500);
+        }
+        hidePreloader();
+    });
+</script>
 
 </html>

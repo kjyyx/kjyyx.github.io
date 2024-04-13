@@ -58,6 +58,14 @@
 </head>
 
 <body>
+    <div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+
     <section class="showcase2"></section>
     <header class="header">
         <div class="toggle"></div>
@@ -99,12 +107,14 @@
             <a href="../projects/railroaded.html" class="nav-link"><span>Railroad-ed</span></a>
         </div>
         <div class="content1">
-            <!-- <h2 class="title">Lava Craze</h2> -->
-            <img class="image lavacraze-image" src="../img/railroad-ed.png" alt="Image">
+            <img class="image" src="../img/railroad-ed.png" alt="Image">
+            <div>
             <p class="description">Railroad-ED is an interesting website all about the history of the Philippine Railroad. It has
                 blogs about its past, present, and future. The site is made with WordPress, making it easy for
                 you to dive into the exciting story of the Philippine Railroad.
             </p>
+            <a href="https://railroaded8.wordpress.com/" class="site-button site-link" target="_blank">VIEW SITE</a>
+        </div>
         </div>
         <hr class="divider">
         <div class="content4">
@@ -176,5 +186,19 @@
 
 </body>
 <script src="../js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    /* Preloader */
+    $(window).on("load", function () {
+        var preloaderFadeOutTime = 500;
+        function hidePreloader() {
+            var preloader = $(".spinner-wrapper");
+            setTimeout(function () {
+                preloader.fadeOut(preloaderFadeOutTime);
+            }, 500);
+        }
+        hidePreloader();
+    });
+</script>
 
 </html>

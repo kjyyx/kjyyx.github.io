@@ -14,7 +14,16 @@
     <link rel="icon" href="/img/KYZENLOGO2.png" type="image/x-icon" />
 </head>
 
-<body>
+<body oncontextmenu="return false">
+
+    <div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+
     <section id="home" class="showcase">
         <div class="mainheadcontainer">
             <div class="header-container visible-container">
@@ -47,7 +56,9 @@
             <div class="logo-container">
                 <img src="img/KYZENLOGO2.png" alt="Logo" class="nav-logo" />
                 <!-- <img src="img/KYZENLOGO5.png" alt="Logo" class="nav-logo3" /> -->
-                <a href="#home" class="nav-link"><h2 class="nav-text">Kyzen</h2></a>
+                <a href="#home" class="nav-link">
+                    <h2 class="nav-text">Kyzen</h2>
+                </a>
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
@@ -100,7 +111,7 @@
         <div class="info-wrapper">
             <div class="image-container">
                 <div class="image-overlay">
-                    <img src="img/PORTRAIT-2.png" alt="Your Image Alt Text">
+                    <img src="img/PORTRAIT-1.png" alt="Your Image Alt Text">
                 </div>
             </div>
         </div>
@@ -142,7 +153,7 @@
         </div>
         <div class="marquee">
             <div class="section-heading">
-                <h3>Other Skills</h3>
+                <h3 style="font-family: Orbitron;">I dabble in:</h3>
             </div>
             <div class="marquee--inner">
                 <span><i class="fab fa-php"></i> PHP</span>
@@ -159,7 +170,7 @@
         </div>
     </section>
 
-    
+
     <!-- PROJECTS SECTION -->
     <section id="projects" class="scroll-animation">
         <div class="projects-container">
@@ -204,11 +215,37 @@
                         <p>WORDPRESS | Front-end Developer <br> <i class="prompt">Click to view project</i></p>
                     </div>
                 </div>
-                <div class="projects-item">
+                <div class="projects-item" onclick="redirectToPage('projects/kairos.html')">
+                    <img src="img/kairos.png" alt="Project Item 1">
+                    <div class="overlay">
+                        <h2>Kairos</h2>
+                        <p>JavaScript Integration | Front-end Developer <br> <i class="prompt">Click to view project</i></p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- <section id="certificates" class="scroll-animation">
+        <div class="certificates-container">
+            <h1 class="projects-header">Selected Works</h1>
+        </div>
+    </section> -->
+
+    <!-- <section id="new-projects" class="scroll-animation">
+        <div class="new-projects-container">
+            <h1 class="new-projects-header">Selected Works</h1>
+            <div class="new-projects-row">
+                <div class="new-project-description">
+                    <h2>Lava Craze</h2>
+                    <p>WORDPRESS | Front End Developer</p>
+                </div>
+                <div class="new-project-image">
+                    <img src="img/lavacraze.png" alt="Project Item 1">
+                </div>
+            </div>
+        </div>
+    </section> -->
 
 
     <!-- <section class="universal-section">
@@ -263,5 +300,19 @@
 
 </body>
 <script src="js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    /* Preloader */
+    $(window).on("load", function () {
+        var preloaderFadeOutTime = 500;
+        function hidePreloader() {
+            var preloader = $(".spinner-wrapper");
+            setTimeout(function () {
+                preloader.fadeOut(preloaderFadeOutTime);
+            }, 500);
+        }
+        hidePreloader();
+    });
+</script>
 
 </html>
