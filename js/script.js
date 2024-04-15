@@ -93,3 +93,21 @@ function updateNavigation() {
 
 // Call the function initially
 updateNavigation();
+
+// document.querySelectorAll('.certificates-table tr').forEach(tr => {
+//     tr.addEventListener('mouseenter', () => {
+//         const marqueeText = tr.getAttribute('data-marquee');
+//         if (marqueeText) {
+//             tr.textContent = marqueeText;
+//         }
+//     });
+
+//     tr.addEventListener('mouseleave', () => {
+//         const originalText = tr.getAttribute('data-original-text');
+//         if (originalText) {
+//             tr.textContent = originalText;
+//         }
+//     });
+
+//     tr.setAttribute('data-original-text', tr.textContent);
+// });

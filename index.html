@@ -14,8 +14,9 @@
     <link rel="icon" href="/img/KYZENLOGO2.png" type="image/x-icon" />
 </head>
 
-<body oncontextmenu="return false">
+<!-- <body oncontextmenu="return false"> -->
 
+<body>
     <div class="spinner-wrapper">
         <div class="spinner">
             <div class="bounce1"></div>
@@ -27,7 +28,7 @@
     <section id="home" class="showcase">
         <div class="mainheadcontainer">
             <div class="header-container visible-container">
-                <img src="img/KYZENLOGO2.png" alt="Logo2" class="nav-logo2" />
+                <img src="img/KYZENLOGO2.png" alt="Logo2" class="nav-logo2" draggable="false" />
                 <h1 class="header-text">Kyzen</h1>
                 <h3 class="header-text2">Website Developer</h3>
             </div>
@@ -54,24 +55,27 @@
         <div class="toggle"></div>
         <nav class="navbar">
             <div class="logo-container">
-                <img src="img/KYZENLOGO2.png" alt="Logo" class="nav-logo" />
+                <img src="img/KYZENLOGO2.png" alt="Logo" class="nav-logo" draggable="false" />
                 <!-- <img src="img/KYZENLOGO5.png" alt="Logo" class="nav-logo3" /> -->
                 <a href="#home" class="nav-link">
                     <h2 class="nav-text">Kyzen</h2>
                 </a>
             </div>
             <ul class="nav-menu">
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a href="#home" class="nav-link">// home</a><span class="badge">01</span>
+                </li> -->
+                <li class="nav-item">
+                    <a href="#info" class="nav-link">// info</a><span class="badge">01</span>
                 </li>
                 <li class="nav-item">
-                    <a href="#info" class="nav-link">// info</a><span class="badge">02</span>
+                    <a href="#skills" class="nav-link">// skills</a><span class="badge">02</span>
                 </li>
                 <li class="nav-item">
-                    <a href="#skills" class="nav-link">// skills</a><span class="badge">03</span>
+                    <a href="#projects" class="nav-link">// projects</a><span class="badge">03</span>
                 </li>
                 <li class="nav-item">
-                    <a href="#projects" class="nav-link">// projects</a><span class="badge">04</span>
+                    <a href="#testimonials" class="nav-link">// testimonials</a><span class="badge">04</span>
                 </li>
                 <li class="nav-item">
                     <a href="#contact" class="nav-link">// contact</a><span class="badge">05</span>
@@ -111,7 +115,7 @@
         <div class="info-wrapper">
             <div class="image-container">
                 <div class="image-overlay">
-                    <img src="img/PORTRAIT-1.png" alt="Your Image Alt Text">
+                    <img src="img/PORTRAIT-1.png" alt="Your Image Alt Text" draggable="false">
                 </div>
             </div>
         </div>
@@ -219,12 +223,120 @@
                     <img src="img/kairos.png" alt="Project Item 1">
                     <div class="overlay">
                         <h2>Kairos</h2>
-                        <p>JavaScript Integration | Front-end Developer <br> <i class="prompt">Click to view project</i></p>
+                        <p>JavaScript Integration | Front-end Developer <br> <i class="prompt">Click to view project</i>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="scroll-animation">
+        <div class="testimonials-container">
+            <h1 class="testimonials-header">testimonials.</h1>
+            <hr>
+            <div class="testimonials-row">
+                <div class="card">
+
+                    <img src="/img/T-1.jpg" alt="Card Image" class="card-image" draggable="false">
+                    <div class="card-header">Genyelle Rivera</div>
+                    <div class="card-subtitle">DHVSU BSCpE</div>
+                    <p class="card-description">Kyzen as a web developer does a neat front end, strong back end skills,
+                        and a great sense of design. Responsible and knowledgeable, he's impressive in every way.</p>
+                </div>
+                <div class="card">
+
+                    <img src="/img/T-2.jpg" alt="Card Image" class="card-image" draggable="false">
+                    <div class="card-header">Edzel Dizon Jr.</div>
+                    <div class="card-subtitle">HAU SEA | Kairos client</div>
+                    <p class="card-description">Kyzen delivered an exceptional website despite our simple request.
+                        Smooth communication and precision in meeting our needs made working with him enjoyable and
+                        successful. </p>
+                </div>
+                <div class="card">
+
+                    <img src="/img/T-3.jpg" alt="Card Image" class="card-image" draggable="false">
+                    <div class="card-header">Cristian Pineda</div>
+                    <div class="card-subtitle">RTU-Boni BSEE</div>
+                    <p class="card-description">Kyzen, as a web developer displayed a customer-friendly website wherein
+                        all the essentials and important information were included for a better customer experience.</p>
+                </div>
+                <!-- <div class="card">
+
+                    <img src="https://via.placeholder.com/300" alt="Card Image" class="card-image">
+                    <div class="card-header">Genyelle Rivera</div>
+                    <div class="card-subtitle">DHVSU BSCpE 2022-2026</div>
+                    <p class="card-description">Kyzen as a web developer does a neat front end, strong back end skills,
+                        and a great sense of design. Responsible and knowledgeable, he's impressive in every way.</p>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATES SECTION -->
+    <section id="certificates" class="scroll-animation">
+        <div class="additional-content">
+            <h1 class="additional-header">Stunting <br> with <br> my <br>credentials. </h1>
+            <div class="cert-line"></div>
+            <h6 class="additional-subheader">The Certificates I gathered so far.</h6>
+        </div>
+
+        <div class="content-container">
+            <table class="certificates-table">
+                <thead>
+                    <tr>
+                        <th>Certificate</th>
+                        <th>Company</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Introduction to Cybersecurity</td>
+                        <td>Cisco Networking Academy</td>
+                        <td>9 November 2021</td>
+                        <td class="popup-image">
+                            <img src="/img/CERTIFICATES/ITC.png" alt="Certificate Image">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Introduction to Internet of Things</td>
+                        <td>Cisco Networking Academy</td>
+                        <td>18 February 2022</td>
+                        <td class="popup-image">
+                            <img src="/img/CERTIFICATES/IIOT.png" alt="Certificate Image">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Red Hat System Administration I (RH124)</td>
+                        <td>Red Hat Academy</td>
+                        <td>12 November 2022</td>
+                        <td class="popup-image">
+                            <img src="img/CERTIFICATES/RH.png" alt="Certificate Image">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Google Analytics Certification</td>
+                        <td>Google</td>
+                        <td>10 October 2023</td>
+                        <td class="popup-image">
+                            <img src="img/CERTIFICATES/GA.png" alt="Certificate Image">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>CyberOps Associate</td>
+                        <td>Cisco Networking Academy</td>
+                        <td>27 November 2023</td>
+                        <td class="popup-image">
+                            <img src="img/CERTIFICATES/CA.png" alt="Certificate Image">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
 
     <!-- <section id="certificates" class="scroll-animation">
         <div class="certificates-container">
@@ -264,7 +376,7 @@
 
 
     <button onclick="topFunction()" id="myBtn" title="Go to top">
-        <img src="/img/rocket.png" alt="Rocket"> <!-- Add your rocket PNG image -->
+        <img src="/img/rocket.png" alt="Rocket" draggable="false"> <!-- Add your rocket PNG image -->
     </button>
 
     <!-- contact section -->
@@ -292,7 +404,7 @@
                 </div>
             </div>
             <div class="contact-right">
-                <img src="img/KYZENLOGO4.png" alt="Logo2" class="contact-logo" />
+                <img src="img/KYZENLOGO4.png" alt="Logo2" class="contact-logo" draggable="false" />
             </div>
         </div>
         <div class="copyright">Designed by: KYZEN © 2024</div>
