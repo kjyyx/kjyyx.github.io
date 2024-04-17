@@ -516,11 +516,10 @@ ul li:hover {
     /* Text color */
     display: inline-block;
     font-family: "Source Code Pro", monospace;
-    font-size: 20px;
+    font-size: 20px; /* Increase font size */
     font-style: normal;
     font-weight: normal;
-    padding-top: 5rem;
-    padding: 10px 20px;
+    padding: 10px 20px; /* Adjust padding */
     text-decoration: none;
     transition: background-color 0.3s ease;
     z-index: 5;
@@ -949,14 +948,13 @@ ul li:hover {
 }
 
 button {
-    /*Box model stuff*/
-    padding: 10px 20px;
+    padding: 12px; /* Increase padding */
     border: none;
     background-color: #ff4500;
-    /*Typography stuff*/
-    font-size: 1.2rem;
+    /* Typography stuff */
+    font-size: 1.2rem; /* Increase font size */
     color: white;
-    /*Miscellaneous*/
+    /* Miscellaneous */
     cursor: pointer;
 }
 
@@ -1805,12 +1803,12 @@ hr {
     color: white;
     cursor: pointer;
     border-radius: 50%;
-    width: 50px; /* Adjust button width */
-    height: 50px; /* Adjust button height */
+    width: 60px; /* Increase button width */
+    height: 60px; /* Increase button height */
 }
 
 #myBtn img {
-    width: 100%; /* Adjust the width of the rocket image */
+    width: 70%; /* Adjust the width of the rocket image */
     height: auto; /* Maintain aspect ratio */
 }
 
