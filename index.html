@@ -19,7 +19,14 @@
     <meta name=author content=Kyzen>
 </head>
 
-<body>
+<body onload="showPopup()">
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <img src="/img/POPUP-AD.png" alt="Popup Ad">
+        </div>
+    </div>
+
     <div class=spinner-wrapper>
         <div class=spinner>
             <div class=bounce1></div>
@@ -27,6 +34,7 @@
             <div class=bounce3></div>
         </div>
     </div>
+
     <section id=home class=showcase>
         <div class=mainheadcontainer>
             <div class="header-container visible-container">

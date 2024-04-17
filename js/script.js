@@ -64,7 +64,6 @@
 //     window.location.href = pageUrl;
 // }
 
-
 // function updateNavigation() {
 //     const files = ['lavacraze.html', 'brisk.html', 'sprint.html', 'GPT.html', 'railroaded.html', 'kairos.html'];
 //     const currentFile = location.pathname.split('/').pop(); // Get the current HTML file
@@ -110,12 +109,9 @@
 //     tr.setAttribute('data-original-text', tr.textContent);
 // });
 
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
-const navLink = document.querySelectorAll(".nav-link");
-
-hamburger.addEventListener("click", mobileMenu);
-navLink.forEach(n => n.addEventListener("click", closeMenu));
+const hamburger = document.querySelector(".hamburger"),
+    navMenu = document.querySelector(".nav-menu"),
+    navLink = document.querySelectorAll(".nav-link");
 
 function mobileMenu() {
     hamburger.classList.toggle("active");
@@ -127,54 +123,76 @@ function closeMenu() {
     navMenu.classList.remove("active");
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-    const sections = document.querySelectorAll('.scroll-animation');
+hamburger.addEventListener("click", mobileMenu);
+navLink.forEach((link) => link.addEventListener("click", closeMenu));
 
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
+document.addEventListener("DOMContentLoaded", () => {
+    const scrollElements = document.querySelectorAll(".scroll-animation");
+    const scrollObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('animate');
+                entry.target.classList.add("animate");
             }
         });
     });
 
-    sections.forEach(section => {
-        observer.observe(section);
+    scrollElements.forEach((element) => {
+        scrollObserver.observe(element);
     });
 });
 
-// Get the button:
 let mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () {
-    scrollFunction();
-};
-
 function scrollFunction() {
-    mybutton.style.display = (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ? "block" : "none";
+    mybutton.style.display =
+        document.body.scrollTop > 20 || document.documentElement.scrollTop > 20
+            ? "block"
+            : "none";
 }
 
-// When the user clicks on the button, scroll to the top of the document with smooth animation
 function topFunction() {
-    document.documentElement.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
+    document.documentElement.scrollTo({ top: 0, behavior: "smooth" });
 }
 
-function redirectToPage(pageUrl) {
-    window.location.href = pageUrl;
+function redirectToPage(url) {
+    window.location.href = url;
 }
 
 function updateNavigation() {
-    const files = ['lavacraze.html', 'brisk.html', 'sprint.html', 'GPT.html', 'railroaded.html', 'kairos.html'];
-    const currentFile = location.pathname.split('/').pop();
+    const projects = [
+        "lavacraze.html",
+        "brisk.html",
+        "sprint.html",
+        "GPT.html",
+        "railroaded.html",
+        "kairos.html"
+    ];
+    const currentPath = location.pathname.split("/").pop();
+    const currentIndex = projects.indexOf(currentPath);
 
-    const currentIndex = files.indexOf(currentFile);
+    const prevProjectIndex = currentIndex > 0 ? currentIndex - 1 : projects.length - 1;
+    const nextProjectIndex = currentIndex < projects.length - 1 ? currentIndex + 1 : 0;
 
-    document.getElementById('prevProjectLink').href = files[currentIndex > 0 ? currentIndex - 1 : files.length - 1];
-    document.getElementById('nextProjectLink').href = files[currentIndex < files.length - 1 ? currentIndex + 1 : 0];
+    document.getElementById("prevProjectLink").href = projects[prevProjectIndex];
+    document.getElementById("nextProjectLink").href = projects[nextProjectIndex];
 }
 
+function showPopup() {
+    document.getElementById("popup").style.display = "block";
+    document.getElementById("popup").style.animation = "fadeIn 0.5s ease forwards";
+    setTimeout(closePopup, 10000); // Close after 10 seconds
+}
+
+function closePopup() {
+    document.getElementById("popup").style.animation = "fadeOut 0.5s ease forwards";
+    setTimeout(() => {
+        document.getElementById("popup").style.display = "none";
+        document.getElementById("popup").style.animation = "";
+    }, 500); // Wait for fade-out animation to complete
+}
+
+window.onscroll = function () {
+    scrollFunction();
+};
 updateNavigation();
+
