@@ -6,32 +6,19 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Poppins", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
-
-@font-face {
-    font-family: Horizon;
-    src: url("fonts/horizon.otf");
-}
-
-/* @font-face {
-    font-family: Fast Hand;
-    src: url("fonts/Fast Hand.otf");
-} */
 
 body {
     padding: 0;
     margin: 0;
     height: 100%;
-    font-family: "Poppins", sans-serif;
     background-color: #1d1d1b;
     position: relative;
-    /* Ensure the body is positioned relatively */
 }
 
 body::after {
     content: "";
-    /* Create a pseudo-element */
     position: absolute;
     top: 0;
     left: 0;
@@ -39,19 +26,14 @@ body::after {
     height: 100%;
     background-image: url('/img/BG3.webp');
     background-size: cover;
-    /* Cover the entire body */
     background-position: center;
-    /* Center the image */
     opacity: 0.05;
-    /* Adjust the opacity of the overlay */
     z-index: -1;
 }
 
 ::selection {
     background-color: #FD7C18;
-    /* Change the highlight color to yellow */
     color: white;
-    /* Change the text color when highlighted */
 }
 
 .spinner-wrapper {
@@ -67,13 +49,10 @@ body::after {
 .spinner {
     position: absolute;
     top: 50%;
-    /* centers the loading animation vertically one the screen */
     left: 50%;
-    /* centers the loading animation horizontally one the screen */
     width: 3.75rem;
     height: 1.25rem;
     margin: -0.625rem 0 0 -1.875rem;
-    /* is width and height divided by two */
     text-align: center;
 }
 
@@ -83,49 +62,17 @@ body::after {
     height: 1rem;
     border-radius: 100%;
     background-color: #FD7C18;
-    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
     animation: sk-bouncedelay 1.4s infinite ease-in-out both;
 }
 
-.spinner .bounce1 {
-    -webkit-animation-delay: -0.32s;
-    animation-delay: -0.32s;
-}
-
-.spinner .bounce2 {
-    -webkit-animation-delay: -0.16s;
-    animation-delay: -0.16s;
-}
-
-@-webkit-keyframes sk-bouncedelay {
-
-    0%,
-    80%,
-    100% {
-        -webkit-transform: scale(0);
-    }
-
-    40% {
-        -webkit-transform: scale(1.0);
-    }
-}
+.spinner .bounce1 { animation-delay: -0.32s; }
+.spinner .bounce2 { animation-delay: -0.16s; }
 
 @keyframes sk-bouncedelay {
-
-    0%,
-    80%,
-    100% {
-        -webkit-transform: scale(0);
-        -ms-transform: scale(0);
-        transform: scale(0);
-    }
-
-    40% {
-        -webkit-transform: scale(1.0);
-        -ms-transform: scale(1.0);
-        transform: scale(1.0);
-    }
+    0%, 80%, 100% { transform: scale(0); }
+    40% { transform: scale(1.0); }
 }
+
 
 
 .badge {
@@ -1342,12 +1289,10 @@ hr {
 
 /* Mobile Styles */
 @media only screen and (max-width: 768px) {
-
     .skills-container {
         margin-right: 0;
         margin-bottom: 20px;
     }
-
 
     .skill-list li {
         padding: 5px 10px;
@@ -1404,7 +1349,6 @@ hr {
         font-size: 2vh;
         font-family: "Orbitron", sans-serif;
         vertical-align: middle;
-        /* Align the text vertically */
     }
 
     .marquee--inner i {
@@ -1413,6 +1357,7 @@ hr {
         margin-right: 5px;
     }
 }
+
 
 
 /* @media only screen and (max-width: 768px) {} */
@@ -1591,6 +1536,7 @@ hr {
 }
 
 
+
 @media only screen and (max-width: 768px) {
     #info {
         display: flex;
@@ -1716,14 +1662,17 @@ hr {
 
     .header-text {
         font-size: 5rem;
+        text-align: center; /* Center align text */
     }
 
     .header-text2 {
         font-size: 1rem;
+        text-align: center; /* Center align text */
     }
 
     .nav-logo2 {
-        width: 200px;
+        width: 100%; /* Make logo responsive */
+        max-width: 200px; /* Set maximum width */
         height: auto;
     }
 }
@@ -1743,7 +1692,7 @@ hr {
 @media only screen and (max-width: 768px) {
     .showcase {
         max-height: 100vh;
-        padding: 50px;
+        padding: 20px;
         /* Reduce padding for smaller screens */
         background-position: calc(50% + -30vh) center;
         /* Adjust the value (20px) as needed */
@@ -1788,7 +1737,7 @@ hr {
     }
 
     .nav-item {
-        margin: 1.5rem 0;
+        margin: 1rem 0;
     }
 
     .hamburger {
@@ -1801,13 +1750,11 @@ hr {
     }
 
     .hamburger.active .bar:nth-child(1) {
-        -webkit-transform: translateY(8px) rotate(45deg);
-        transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg); /* Simplify transform property */
     }
 
     .hamburger.active .bar:nth-child(3) {
-        -webkit-transform: translateY(-8px) rotate(-45deg);
-        transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg); /* Simplify transform property */
     }
 }
 
@@ -1849,7 +1796,7 @@ hr {
     display: none;
     position: fixed;
     bottom: 20px;
-    right: 30px;
+    right: 20px; /* Adjust right positioning for smaller screens */
     z-index: 99;
     background: #ff7300;
     background-size: cover;
@@ -1858,14 +1805,14 @@ hr {
     outline: none;
     color: white;
     cursor: pointer;
-    border-radius: 50px;
+    border-radius: 50%;
+    width: 50px; /* Adjust button width */
+    height: 50px; /* Adjust button height */
 }
 
 #myBtn img {
-    width: 100%;
-    /* Adjust the width of the rocket image */
-    height: 30px;
-    /* Maintain aspect ratio */
+    width: 100%; /* Adjust the width of the rocket image */
+    height: auto; /* Maintain aspect ratio */
 }
 
 

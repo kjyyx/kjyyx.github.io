@@ -6,28 +6,18 @@ body {
 }
 
 body::after {
-    /*Display stuff*/
     content: "";
-    /*Positioning stuff*/
     position: absolute;
     left: 0;
     top: 0;
     z-index: -1;
-    /*Box model stuff*/
     width: 100%;
     height: 100%;
-    /* background-image: url('/img/BG2.png'); */
     background-position: center;
     background-size: contain;
-    /*Manipulations stuff*/
     opacity: 0.05;
-    /*Miscellaneous*/
-    /* Adjust the opacity of the overlay */
-    /* Center the image */
-    /* Cover the entire body */
-    /* Create a pseudo-element */
-    /* background-size: cover; */
 }
+
 
 footer {
     width: 100%;
@@ -35,7 +25,8 @@ footer {
     padding: 10px;
     color: #000000;
     text-align: center;
-    margin-top: auto; /* Push footer to the bottom */
+    margin-top: auto;
+    /* Push footer to the bottom */
 }
 
 .copyright2,
@@ -43,24 +34,24 @@ footer {
     font-family: "Source Code Pro", monospace;
     color: #000000;
     font-size: 0.8rem;
-    margin: 5px; /* Add some margin for spacing */
+    margin: 5px;
+    /* Add some margin for spacing */
 }
 
+/* Align the first div to the left */
+/* Add some margin for spacing */
 .copyright2 {
     float: left;
-    /* Align the first div to the left */
     margin-left: 15vw;
-    /* Add some margin for spacing */
 }
 
+/* Align the second div to the right */
+/* Add some margin for spacing */
 .rights-reserved {
-/*Box model stuff*/
-    margin-right: 15vw;
-/*Miscellaneous*/
     float: right;
-    /* Align the second div to the right */
-    /* Add some margin for spacing */
+    margin-right: 15vw;
 }
+
 
 .content-section {
     display: flex;
@@ -75,40 +66,34 @@ footer {
 
 .content1 {
     display: flex;
-    align-items: center; /* Align items vertically */
+    align-items: center;
 }
 
 .content4 {
     display: flex;
-    flex-direction: column; /* Arrange content vertically */
-    justify-content: center; /* Center the content vertically */
-    align-items: center; /* Center the content horizontally */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .title {
-    /*Typography stuff*/
     font-size: 2rem;
     margin-bottom: 10px;
 }
 
 .description {
-/*Display stuff*/
     flex: 1;
-/*Box model stuff*/
     width: 90%;
-/*Typography stuff*/
     font-family: "Source Code Pro", monospace;
     font-size: 2.4vh;
     font-style: normal;
     text-transform: uppercase;
     color: white;
-/*Miscellaneous*/
     font-optical-sizing: auto;
-    flex-grow: 1; /* Allow the paragraph to grow to fill remaining space */
+    flex-grow: 1;
 }
 
-
-.site-link{
+.site-link {
     margin: 20px 0 0 0;
 }
 
@@ -129,17 +114,16 @@ footer {
 }
 
 .site-button:hover {
-    background-image: linear-gradient(45deg, #ff4500, #ffff00); /* Gradient background */
+    background-image: linear-gradient(45deg, #ff4500, #ffff00);
     color: #000000;
 }
 
 .image {
     max-width: 30%;
     height: auto;
-    flex-shrink: 0; /* Prevent the image from shrinking */
-    margin-right: 30px; /* Add margin between the image and text */
+    flex-shrink: 0;
+    margin-right: 30px;
 }
-
 
 .divider {
     width: 100%;
@@ -149,21 +133,30 @@ footer {
 
 .contributors {
     display: flex;
-    flex-wrap: wrap; /* Allow contributors to wrap */
-    max-width: 800px; /* Limit the width of the contributors section */
-    margin-top: 20px; /* Add top margin */
+    flex-wrap: wrap;
+    /* Allow contributors to wrap */
+    max-width: 800px;
+    /* Limit the width of the contributors section */
+    margin-top: 20px;
+    /* Add top margin */
 }
 
 .contributor {
-    flex: 1; /* Make contributors occupy equal width */
-    text-align: center; /* Center align contributor content */
-    margin-bottom: 20px; /* Add bottom margin */
-    padding: 0 50px; /* Add padding */
+    flex: 1;
+    /* Make contributors occupy equal width */
+    text-align: center;
+    /* Center align contributor content */
+    margin-bottom: 20px;
+    /* Add bottom margin */
+    padding: 0 50px;
+    /* Add padding */
 }
 
-.contributor h4, .contributor h5 {
+.contributor h4,
+.contributor h5 {
     font-family: "Source Code Pro", monospace;
-    color: white; /* Set text color */
+    color: white;
+    /* Set text color */
 }
 
 .contributor h4 {
@@ -178,14 +171,16 @@ footer {
 .social-icons {
     display: flex;
     justify-content: center;
-    margin-top: 10px; /* Add top margin */
+    margin-top: 10px;
+    /* Add top margin */
 }
 
 .social-icons a {
     display: inline-block;
     margin: 0 5px;
     font-size: 20px;
-    color: #ffffff; /* Adjust icon color */
+    color: #ffffff;
+    /* Adjust icon color */
 }
 
 .social-icons a:hover {
@@ -197,7 +192,8 @@ footer {
 
 .breadcrumb {
     margin-bottom: 20px;
-    text-align: left; /* Align the breadcrumb to the left */
+    text-align: left;
+    /* Align the breadcrumb to the left */
 }
 
 .breadcrumb a {
@@ -215,7 +211,8 @@ footer {
 .breadcrumb a:not(:last-child)::after {
     content: " > ";
     margin: 0 5px;
-    color: #ffffff; /* Default color */
+    color: #ffffff;
+    /* Default color */
 }
 
 .breadcrumb a:not(:last-child):hover::after {
@@ -223,60 +220,6 @@ footer {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-
-.workinprogress {
-    max-width: 90%;
-    max-height: 100%;
-    height: auto;
-    background-position: center;
-}
-
-/* iframe {
-    width: 100%; 
-    height: 315px; 
-    margin-bottom: 20px; 
-    border: 2px solid #ccc; 
-    border-radius: 10px; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-}
-
-iframe:hover {
-    border-color: #ff4500; 
-}
-
-
-.img-content-section {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    padding: 100px;
-    max-width: 1500px;
-    margin: 0 auto;
-}
-
-.content2 {
-    display: flex-start;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-}
-
-.img-content {
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-@media only screen and (max-width: 768px) {
-    .img-content, .youtube-video {
-        max-width: 100%;
-    }
-} */
 
 .img-content-section {
     display: flex;
@@ -290,11 +233,11 @@ iframe:hover {
 .content2,
 .content3 {
     width: 100%;
-    box-sizing: border-box;
     padding: 20px;
+    box-sizing: border-box;
 }
 
-.content3{
+.content3 {
     padding-bottom: 100px;
 }
 
@@ -310,9 +253,7 @@ iframe {
     display: block;
     width: 100%;
     max-width: 100%;
-    /* Maximize width based on container */
     height: auto;
-    /* Maintain aspect ratio */
     margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -321,7 +262,6 @@ iframe {
 .youtube-video,
 iframe {
     height: 735px;
-    /* Set fixed height for both YouTube videos and iframes */
 }
 
 iframe:hover {
@@ -330,29 +270,22 @@ iframe:hover {
 
 .project-navigation {
     position: fixed;
-    top: 50%; /* Position at the middle of the screen vertically */
-    right: calc(0px + 0px + 25px); /* Adjust to avoid overlapping with existing button */
+    top: 50%;
+    right: calc(25px);
     z-index: 99;
-    transform: translateY(-50%); /* Move the element up by 50% of its own height to center it */
+    transform: translateY(-50%);
 }
-
 
 .prev-project,
 .next-project {
-/*Box model stuff*/
     margin: 10px 0;
-    padding: 10px 15px; /* Smaller padding */
+    padding: 10px 15px;
     border-radius: 5px;
     background-color: #ff7300;
-/*Typography stuff*/
-    font-size: 14px; /* Smaller font size */
+    font-size: 14px;
     text-decoration: none;
     color: #ffffff;
-/*Manipulations stuff*/
     transition: background-color 0.3s;
-/*Miscellaneous*/
-    padding: 10px 15px; /* Smaller padding */
-    font-size: 14px; /* Smaller font size */
 }
 
 .prev-project a,
@@ -373,54 +306,50 @@ iframe:hover {
     font-size: 1rem;
 }
 
-@media only screen and (max-width: 768px) {
 
+/* Media query for video and iframe */
+@media only screen and (max-width: 768px) {
     .youtube-video,
     iframe {
         max-width: 100%;
-        height: 210px;
+        height: 210px; /* Adjust height as needed */
     }
-}
 
-@media only screen and (max-width: 768px) {
-    .breadcrumb{
+    /* Center align content */
+    .breadcrumb {
         padding-top: 2vh;
         margin: 0 auto;
     }
+
     .content1 {
         display: flex;
-        flex-direction: column; /* Stack content vertically */
-        align-items: center; /* Center align content horizontally */
-        text-align: center; /* Center align text */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .content1 .image {
-        margin-bottom: 20px; /* Add space below the image */
+        margin-bottom: 20px;
     }
 
-    .image{
+    .image {
         max-width: 100%;
         margin: 0;
         padding: 10px;
     }
 
     .content1 .description {
-        max-width: 100%; /* Limit width of the description */
-        font-size: 2.1vh;
+        max-width: 100%;
+        font-size: 2.1vh; /* Adjust font size as needed */
     }
 
-    .content-section{
+    .content-section {
         padding: 0;
     }
-}
 
-@media only screen and (max-width: 768px) {
-    .copyright2, .rights-reserved {
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-    }
-
+    /* Center align copyright and rights-reserved */
+    .copyright2,
+    .rights-reserved,
     footer {
         display: flex;
         flex-direction: column;
