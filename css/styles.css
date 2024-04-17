@@ -73,8 +73,6 @@ body::after {
     40% { transform: scale(1.0); }
 }
 
-
-
 .badge {
     position: relative;
     top: -1rem;
