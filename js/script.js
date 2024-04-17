@@ -139,6 +139,25 @@ document.addEventListener("DOMContentLoaded", () => {
     scrollElements.forEach((element) => {
         scrollObserver.observe(element);
     });
+
+    // Lazy load images
+    const lazyImages = document.querySelectorAll('img[data-src]');
+    const lazyImageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const lazyImage = entry.target;
+                lazyImage.src = lazyImage.dataset.src; // Load the image source
+                lazyImage.onload = () => {
+                    lazyImage.removeAttribute('data-src'); // Remove data-src attribute after loading
+                };
+                observer.unobserve(lazyImage); // Stop observing this image once loaded
+            }
+        });
+    });
+
+    lazyImages.forEach(image => {
+        lazyImageObserver.observe(image);
+    });
 });
 
 let mybutton = document.getElementById("myBtn");
