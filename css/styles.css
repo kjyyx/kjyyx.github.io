@@ -1005,7 +1005,7 @@ button {
     -webkit-text-stroke-color: white;
     margin-bottom: -20px;
     padding-top: 5rem;
-    letter-spacing: 5px
+    letter-spacing: 0px
 }
 
 .content {
@@ -1200,10 +1200,32 @@ hr {
 }
 
 @media only screen and (max-width:768px) {
+
+    .line{
+        left: -25px;
+        width: 15rem;
+        height: 10px;
+        top: -1.4rem;
+        z-index: 4
+    }
+
+    .resume-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    .info-more {
+        display: block;
+        padding: 10px;
+    }
+
     .popup-content {
         width: 80%;
         left: 50%;
     }
+
     .popup img {
         width: 100%;
         max-width: none;
@@ -1216,8 +1238,7 @@ hr {
 
 
     #certificates,
-    .cline1,
-    .line {
+    .cline1 {
         display: none
     }
 
@@ -1230,7 +1251,8 @@ hr {
         min-height: 50vh;
         justify-content: flex-start;
         margin: 0 auto;
-        width: 90%
+        width: 90%;
+        padding: 0 0 50px 0;
     }
 
     .testimonials-header {
@@ -1286,7 +1308,7 @@ hr {
     .skills-header {
         min-height: auto;
         font-size: 6vh;
-        padding: 5rem 0
+        padding: 4rem 0
     }
 
     .skill-list li i {

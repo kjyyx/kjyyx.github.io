@@ -213,5 +213,12 @@ function closePopup() {
 window.onscroll = function () {
     scrollFunction();
 };
+
+document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+    // Show a popup message
+    alert('Oops! Right-clicking is like knocking on a door that politely says "No Visitors Allowed!"');
+});
+
 updateNavigation();
 
