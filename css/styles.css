@@ -1301,7 +1301,8 @@ hr {
     }
 
     .range {
-        font-size: 2.5vh
+        font-size: 2vh;
+        font-weight: 500;
     }
 
     .projects-header,
@@ -1318,8 +1319,7 @@ hr {
 
     .skill-list li .skill-name {
         font-family: "Source Code Pro", monospace;
-        font-size: 2.5vh;
-        padding: 0 20px
+        font-size: 2vh;
     }
 
     .skill-box {
