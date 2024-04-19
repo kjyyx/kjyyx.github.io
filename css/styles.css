@@ -1001,7 +1001,7 @@ button {
 
 .additional-header,
 .testimonials-header {
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: white;
     margin-bottom: -20px;
     padding-top: 5rem;
@@ -1539,7 +1539,8 @@ hr {
 
     .header-text {
         font-size: 5rem;
-        text-align: center
+        text-align: center;
+        -webkit-text-stroke-width: 2px;
     }
 
     .header-text2 {
